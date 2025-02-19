@@ -20,23 +20,23 @@ function showTab(tabId) {
 document.addEventListener("DOMContentLoaded", function () {
     showTab('basic');
 });
-function toggleAdvancedSearch() {
-    document.getElementById("advancedSearch").classList.toggle("d-none");
-}
-document.querySelectorAll(".column-toggle").forEach(checkbox => {
-    checkbox.addEventListener("change", function () 
+// function toggleAdvancedSearch() {
+//     document.getElementById("advancedSearch").classList.toggle("d-none");
+// }
+// document.querySelectorAll(".column-toggle").forEach(checkbox => {
+//     checkbox.addEventListener("change", function () 
    
-    {
-        let columnIndex = this.getAttribute("data-column");
-        let table = document.querySelector("table");
-        let cells = table.querySelectorAll(`th:nth-child(${+columnIndex + 1}), td:nth-child(${+columnIndex + 1})`);
+//     {
+//         let columnIndex = this.getAttribute("data-column");
+//         let table = document.querySelector("table");
+//         let cells = table.querySelectorAll(`th:nth-child(${+columnIndex + 1}), td:nth-child(${+columnIndex + 1})`);
         
-        if (this.checked) 
-        {
-            cells.forEach(cell => cell.style.display = "");
-        } else 
-        {
-            cells.forEach(cell => cell.style.display = "none");
-        }
-    });
-});
+//         if (this.checked) 
+//         {
+//             cells.forEach(cell => cell.style.display = "");
+//         } else 
+//         {
+//             cells.forEach(cell => cell.style.display = "none");
+//         }
+//     });
+// });
